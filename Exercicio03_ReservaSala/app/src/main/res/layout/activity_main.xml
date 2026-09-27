@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reserva de Sala"
+            android:textSize="24sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Responsável">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etxtNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sala">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etxtSala"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Horário">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etxtHorario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="time" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_Reservar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="reservarSala"
+            android:text="Reservar" />
+
+        <TextView
+            android:id="@+id/txtResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:textSize="18sp" />
+    </LinearLayout>
+</ScrollView>
